@@ -10,8 +10,8 @@ public class FuncionarioTest {
         assertEquals("Antonio", nome);
 
         // O nome pode ser redefinido
-        e.setNome("José");
-        assertEquals("José", e.getNome());
+        e.setNome("Jose");
+        assertEquals("Jose", e.getNome());
     }
 
     @org.junit.jupiter.api.Test
