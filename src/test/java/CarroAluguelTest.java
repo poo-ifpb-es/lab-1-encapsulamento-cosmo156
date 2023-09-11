@@ -105,7 +105,4 @@ public class CarroAluguelTest {
         carro.setDistanciaPercorrida(110);
         assertEquals(3954.5, carro.getDebito());
     }
-
-    private void alugar() {
-    }
 }
