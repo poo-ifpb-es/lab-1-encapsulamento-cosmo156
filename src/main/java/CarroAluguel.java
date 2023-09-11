@@ -78,17 +78,17 @@ public class CarroAluguel {
 
 class CarroDisponivelException extends Exception {
     public CarroDisponivelException() {
-        super("O carro está disponível.");
+        super("O carro esta disponivel.");
     }
 }
 class CarroIndisponivelException extends Exception{
     public CarroIndisponivelException() {
-        super("O carro está indisponível.");
+        super("O carro esta indisponivel.");
     }
 
 }
 class CarroNaoPagoException extends Exception{
     public CarroNaoPagoException() {
-        super("O carro não foi pago.");
+        super("O carro nao foi pago.");
     }
 }
