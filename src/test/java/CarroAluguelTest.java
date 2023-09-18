@@ -24,7 +24,7 @@ public class CarroAluguelTest {
 
         Exception exception = assertThrows(CarroIndisponivelException.class, carro::alugar);
 
-        String expectedMessage = "O carro está indisponível.";
+        String expectedMessage = "O carro esta indisponivel.";
         String actualMessage = exception.getMessage();
 
         assertTrue(actualMessage.contains(expectedMessage));
@@ -37,7 +37,7 @@ public class CarroAluguelTest {
         // Um carro disponível não pode ser devolvido
         Exception exception = assertThrows(CarroDisponivelException.class, carro::devolver);
 
-        String expectedMessage = "O carro está disponível.";
+        String expectedMessage = "O carro esta disponivel.";
         String actualMessage = exception.getMessage();
 
         assertTrue(actualMessage.contains(expectedMessage));
@@ -55,7 +55,7 @@ public class CarroAluguelTest {
 
         Exception exception2 = assertThrows(CarroNaoPagoException.class, carro::devolver);
 
-        String expectedMessage2 = "O carro não foi pago.";
+        String expectedMessage2 = "O carro nao foi pago.";
         String actualMessage2 = exception2.getMessage();
 
         assertTrue(actualMessage2.contains(expectedMessage2));
